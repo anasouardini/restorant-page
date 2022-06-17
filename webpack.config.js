@@ -12,7 +12,7 @@ module.exports = {
         path : path.resolve(__dirname, 'dist/'),
         filename : '[name]_[hash].js',
         clean : true,
-        assetModuleFilename: 'assets/images/[name]_[hash][ext]'
+        assetModuleFilename: 'assets/media/[name]_[hash][ext]'
     },
     devtool : 'source-map',
     module : {

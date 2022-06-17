@@ -2,3 +2,32 @@
 ================ CHUNK: BASE/LAYOUT
 ===========================================*/
 @use "../abstracts/" as vars;
+
+body{
+    padding-top: 100px;
+}
+
+#controls{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+.topic1{
+    background-image: url('../assets/media/topic1.jpg');
+    background-size: cover;
+    box-shadow: 0 0 50px 2px rgba(200, 200, 200, .9);
+}
+.topic2{
+    background-image: url('../assets/media/topic2.jpg');
+    background-size: cover;
+}
+.topic3{
+    background-image: url('../assets/media/topic3.jpg');
+    background-size: cover;
+}
+.topic4{
+    background-image: url('../assets/media/topic4.webp');
+    background-size: cover;
+}

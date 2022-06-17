@@ -36,15 +36,15 @@ let topicGen = (()=>{
 
     
     const load = (topic)=>{
-        _DOM.parent.style.cssText = "height: 600px;width: 800px;margin: 40px auto;display: flex; flex-direction: row; flex-wrap: wrap;";
-        _appendDiv.call(_DOM.parent, topic.topicImageStyle);
+        _DOM.parent.style.cssText = "height: 400px;width: 800px;margin: 40px auto;display: flex; flex-direction: row; flex-wrap: wrap;";
+        const image = _appendDiv.call(_DOM.parent, topic.topicImageStyle);
+        image.classList.add(topic.topicImageClass);
         
         const features = _appendDiv.call(_DOM.parent, topic.featuresContainerStyle, topic.featuresContainerAttr);
-        
         topic.textList.forEach((textNode, index)=>{
-            const feature = _appendDiv.call(features, "width: 100%;height: 100px;");
+            const feature = _appendDiv.call(features, "width: 100%;height: 100px;padding-left: 40px;display: flex;flex-direction: column;justify-content: center;");
             const par = _appendTextElm.call(feature, "p", "", "text-transform: capitalize;");
-            _appendTextElm.call(par, "span", topic.textList2[index], "text-transform: capitalize;");
+            _appendTextElm.call(par, "span", topic.textList2[index], "text-transform: capitalize;padding-right:10px; color: rgb(40, 150, 200);");
             _appendText.call(par, textNode);
         });
     } 

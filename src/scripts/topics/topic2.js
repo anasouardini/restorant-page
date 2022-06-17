@@ -1,7 +1,10 @@
 const topic = {
-    topicImageStyle : "background-image: url('assets/media/topic4.png');flex-grow: 2;height: 100%;",
+    topicImageStyle : "flex-grow: 2;height: 100%;",
+    topicImageClass : "topic2",
     featuresContainerStyle : "flex-grow: 1;height: 100%;",
     featuresContainerAttr : {type:"class", name:"features"},
-    textList : ["text1", "text2", "text3", "text4"],
-    textList2 : ["pre1", "pre2", "pre3", "pre4"]
+    textList : ["It's the best plate ever", "It's the best plate ever", "It's the best plate ever", "It's the best plate ever"],
+    textList2 : ["1", "2", "3", "4"]
 };
+
+export default topic;
